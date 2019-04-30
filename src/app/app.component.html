@@ -1,21 +1,118 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<nav class="colorlib-nav" role="navigation">
+  <div class="top-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div id="colorlib-logo"><a href="/home">Unapp</a></div>
+        </div>
+        <div class="col-md-10 text-right menu-1">
+          <ul>
+            <li><a  rel="noopener" routerLink="/home">Home</a> </li>
+            <li class="has-dropdown">
+              <a  rel="noopener" routerLink="/works">work</a> 
+            
+              <ul class="dropdown">
+                <li><a  rel="noopener" routerLink="/works">Works grid with text</a></li>
+                <li><a  rel="noopener" routerLink="/works">Works grid w/o text</a></li>
+              </ul>
+              
+            
+              <li><a  rel="noopener" routerLink="/services">service</a> </li>
+              <li><a  rel="noopener" routerLink="/blog">blog</a> </li>
+              <li><a  rel="noopener" routerLink="./about">about</a> </li>
+              <li><a  rel="noopener" routerLink="/shop">shop</a> </li>
+              <li><a  rel="noopener" routerLink="/contact">contact</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    
+
+ <router-outlet></router-outlet>
+
+<footer id="colorlib-footer">
+  <div class="container">
+    <div class="row row-pb-md">
+      <div class="col-md-3 colorlib-widget">
+        <h4>About unapp</h4>
+        <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        <p>
+          <ul class="colorlib-social-icons">
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+          </ul>
+        
+  
+      </div>
+      <div class="col-md-3 colorlib-widget">
+        <h4>Information</h4>
+        <p>
+          <ul class="colorlib-footer-links">
+            <li><a href="#"><i class="icon-check"></i> Home</a></li>
+            <li><a href="#"><i class="icon-check"></i> Gallery</a></li>
+            <li><a href="#"><i class="icon-check"></i> About</a></li>
+            <li><a href="#"><i class="icon-check"></i> Blog</a></li>
+            <li><a href="#"><i class="icon-check"></i> Contact</a></li>
+            <li><a href="#"><i class="icon-check"></i> Privacy</a></li>
+          </ul>
+        
+      </div>
+
+      <div class="col-md-3 colorlib-widget">
+        <h4>Recent Blog</h4>
+        <div class="f-blog">
+          <a href="blog" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+          </a>
+          <div class="desc">
+            <h2><a href="blog">Photoshoot Technique</a></h2>
+            <p class="admin"><span>30 March 2018</span></p>
+          </div>
+        </div>
+        <div class="f-blog">
+          <a href="blog" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+          </a>
+          <div class="desc">
+            <h2><a href="blog">Camera Lens Shoot</a></h2>
+            <p class="admin"><span>30 March 2018</span></p>
+          </div>
+        </div>
+        <div class="f-blog">
+          <a href="blog" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+          </a>
+          <div class="desc">
+            <h2><a href="blog">Imahe the biggest photography studio</a></h2>
+            <p class="admin"><span>30 March 2018</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 colorlib-widget">
+        <h4>Contact Info</h4>
+        <ul class="colorlib-footer-links">
+          <li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+          <li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
+          <li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
+          <li><a href="#"><i class="icon-location4"></i> yourwebsite.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+ <p>
+            Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
